@@ -48,27 +48,16 @@ class MainActivity : AppCompatActivity() {
 
         catAdapter.setData(
             listOf(
-                CatModel(
-                    Gender.Male,
-                    CatBreed.BalineseJavanese,
-                    "Fred",
-                    "Silent and deadly",
-                    "https://cdn2.thecatapi.com/images/7dj.jpg"
-                ),
-                CatModel(
-                    Gender.Female,
-                    CatBreed.ExoticShorthair,
-                    "Wilma",
-                    "Cuddly assassin",
-                    "https://cdn2.thecatapi.com/images/egv.jpg"
-                ),
-                CatModel(
-                    Gender.Unknown,
-                    CatBreed.AmericanCurl,
-                    "Curious George",
-                    "Award winning investigator",
-                    "https://cdn2.thecatapi.com/images/bar.jpg"
-                )
+                CatModel(Gender.Male, CatBreed.BalineseJavanese, "Fred", "Silent and deadly", "https://cdn2.thecatapi.com/images/7dj.jpg"),
+                CatModel(Gender.Female, CatBreed.ExoticShorthair, "Wilma", "Cuddly assassin", "https://cdn2.thecatapi.com/images/egv.jpg"),
+                CatModel(Gender.Unknown, CatBreed.AmericanCurl, "Curious George", "Award winning investigator", "https://cdn2.thecatapi.com/images/bar.jpg"),
+                CatModel(Gender.Male, CatBreed.ExoticShorthair, "Tom", "Playful and curious", "https://cdn2.thecatapi.com/images/MTY3ODIyMQ.jpg"),
+                CatModel(Gender.Female, CatBreed.BalineseJavanese, "Lucy", "Loves sleeping on sunny windowsills", "https://cdn2.thecatapi.com/images/4ki.jpg"),
+                CatModel(Gender.Male, CatBreed.AmericanCurl, "Leo", "Always hungry, always cute", "https://cdn2.thecatapi.com/images/bpc.jpg"),
+                CatModel(Gender.Female, CatBreed.ExoticShorthair, "Mia", "Queen of the house", "https://cdn2.thecatapi.com/images/8p0.jpg"),
+                CatModel(Gender.Unknown, CatBreed.BalineseJavanese, "Shadow", "Mysterious and silent observer", "https://cdn2.thecatapi.com/images/9h9.jpg"),
+                CatModel(Gender.Female, CatBreed.AmericanCurl, "Nala", "Loves to play with yarn", "https://cdn2.thecatapi.com/images/bpo.jpg"),
+                CatModel(Gender.Male, CatBreed.ExoticShorthair, "Simba", "Brave little lion", "https://cdn2.thecatapi.com/images/d6i.jpg")
             )
         )
     }
