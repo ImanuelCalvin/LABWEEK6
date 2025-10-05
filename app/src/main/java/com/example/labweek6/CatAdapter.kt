@@ -5,7 +5,12 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.lab_week_06.model.CatModel
 
-class CatAdapter(private val layoutInflater: LayoutInflater, private val imageLoader: ImageLoader) : RecyclerView.Adapter<CatViewHolder>() {
+class CatAdapter(
+    private val layoutInflater: LayoutInflater,
+    private val imageLoader: ImageLoader,
+    private val onClick: (CatModel) -> Unit
+) : RecyclerView.Adapter<CatViewHolder>() {
+
     private val cats = mutableListOf<CatModel>()
 
     fun setData(newCats: List<CatModel>) {
@@ -16,7 +21,7 @@ class CatAdapter(private val layoutInflater: LayoutInflater, private val imageLo
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CatViewHolder {
         val view = layoutInflater.inflate(R.layout.item_list, parent, false)
-        return CatViewHolder(view, imageLoader)
+        return CatViewHolder(view, imageLoader, onClick)
     }
 
     override fun getItemCount() = cats.size
@@ -25,3 +30,4 @@ class CatAdapter(private val layoutInflater: LayoutInflater, private val imageLo
         holder.bindData(cats[position])
     }
 }
+
